@@ -35,6 +35,11 @@ cmd/app-agent/app-agent
 plan.txt
 
 # 含 auth_token/密码等敏感信息的运行配置（保留 .example 作为模板）
+.env
+.env.*
+!.env.example
+!.env.*.example
+audio-agent.json
 cmd/codegen-agent/codegen-agent
 cmd/codegen-agent/settings/.json
 cmd/deploy-agent/deploy-agent.json
@@ -77,3 +82,6 @@ package.json
 package-lock.json
 build_ppt.js
 neural_network_video/
+
+# Python security-check cache
+__pycache__/
