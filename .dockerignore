@@ -8,6 +8,12 @@
 .gitattributes
 .gitmodules
 
+# 本地密钥不得进入构建上下文（包括未被 Git 跟踪的文件）
+**/.env
+**/.env.*
+**/audio-agent.json
+cmd/blog-agent/blog-agent.json
+
 # IDE & Editor
 .vscode/
 .idea/
